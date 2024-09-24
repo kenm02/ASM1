@@ -1,0 +1,71 @@
+Task 1:Print out to screen 20 first numbers of Fibonacci order by descending. (1 point)
+
+Task 2: Create a function, input is a hexadecimal string, the size of this string must be 4 bytes. Convert this string
+to binary string. Turn-off the bit 3 of byte 2 to 0. The result of function is a hexadecimal string after turn-off B2b3.
+The function could be extension function or normal function ( 3 points )
+Example:
+valresult = turnOffB2b3(“12345678”)
+println(result)// result is “12305678”
+
+Task 3:Write a program to find all numbers divisible by 7 but not multiples of 5, between 10 and 200 (counting 10 and 200).
+ The resulting numbers will be printed as strings on a line, separated by commas. ( 1 point )
+
+Task 4:Write a program that input a two-digit integer number. Convert and printout the value of inputted number
+in binary and hexadecimal. ( 1 point )
+
+Task 5:Enter an array of integer numbers a0, a1, a2, ..., an-1. Do not use any other array, print the above
+ array screen in ascending order. (1 point )
+
+Task 6:Enter an string. Count the number of words in the string. Capitalize the first letter of the word
+ if it begins for a sentence. ( 1 point )
+
+Task 7:Write a program input month and year, print out the number of days that month. ( 2 point )
+
+Task8:Create a program( 3 points)
+1. Input a primary account numbers (PAN) of a ATM card. Length of PAN is from 12-19 digits. PAN only allow numeric characters.
+2. Validate the entered PAN using Luhn algorithm.
+(Refer to https://en.wikipedia.org/wiki/Luhn_algorithmor https://vi.wikipedia.org/wiki/Thuật_toán_Luhn)
+3. Print out to screen the card type of entered PAN.
+Know that:
+PAN is start by             CardType
+4                    |       VISA Card
+-------------------------------------------
+50..69,2221..2720    |      Master Card
+-------------------------------------------
+3528..3589           |      JCB Card
+-------------------------------------------
+Other                |      Unknown Card
+
+Task 9: Write a simple application in order to solve the degree equation. ( 2 points )
+
+
+Task 10: Write a program to simulate the Banking ATM which has the following features: ( 4 points )
+   1. Sign in.
+   2. Withdraw money.
+   3. Check remaining amount of money.
+   4. Exit.
+For more details
+   [*] Details:
+
+   - Step 1: Ask user to insert his ATM card and press Enter to continue.
+
+   - Step 2: Ask user to enter password:
+	 + If password length is less than 6 characters, print out an error to user (Invalid password).
+	 + Otherwise, print out the total money that user has (4.000.000 VND).
+	 + If user continuously types wrong passwords for 3 times, then blocking the account and printing an error to user.
+
+   - Step 3: Print out possible options for user:
+	 + Withdraw money.
+	 + Check remaining amount of money.
+	 + Exit.
+
+   * Details of transactions:
+	 - Withdraw:
+	   + Ask user to enter the amount of money that he expects to get.
+	   + Check all possible cases.
+	   + If no problem:
+		 Print out a message to indicate successful transaction.
+		 Print out a message to force user to get back the card and his money and press Enter to continue.
+		 Ask user whether he would like to do another transaction.
+		 	[.] If yes, go back to Step 3.
+		[.] Otherwise, print out a message to say thanks to user, then exiting the program.
